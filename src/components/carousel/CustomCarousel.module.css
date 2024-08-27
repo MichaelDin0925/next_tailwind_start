@@ -1,0 +1,100 @@
+.carouselContainer {
+  position: relative; /* Ensure that child elements with absolute positioning are relative to this container */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the button circular */
+  color: white; /* Icon color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttonNext {
+  right: 1%; /* Position on the right */
+}
+
+.buttonBack {
+  left: 1%; /* Position on the left */
+}
+
+.button:hover {
+  background-color: rgba(143, 140, 140, 0.8);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.overlayImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute; /* Position absolutely within the slide */
+  bottom: 20%;
+  left: 1%;
+}
+
+.overlayImage {
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.overlayText {
+  padding-left: 10px;
+  font-size: 16px; /* Adjust font size as needed */
+  color: #333; /* Text color */
+}
+
+.overlayBigText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+.overlaySmallText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+.overlayTextField {
+  position: absolute; /* Position absolutely within the slide */
+  bottom: 5%;
+  left: 1.5%;
+}
+
+.overlayButton {
+  position: absolute; /* Position absolutely within the slide */
+  display: flex;
+  bottom: 5%;
+  right: 1.5%;
+}
